@@ -1,7 +1,119 @@
+@keyframes shadow {
+    from {
+        box-shadow: 0 0 1px yellow;
+    }
+
+    to {
+        box-shadow: 0 0 40px yellow;
+    }
+}
+
+@keyframes shadow_two {
+    0% {
+        box-shadow: 0 0 0 rgb(190, 214, 9);
+    }
+
+    5% {
+        box-shadow: 0 0 5px rgb(190, 214, 9);
+    }
+
+    10% {
+        box-shadow: 0 0 10px rgb(190, 214, 9);
+    }
+
+    15% {
+        box-shadow: 0 0 15px rgb(190, 214, 9);
+    }
+
+    20% {
+        box-shadow: 0 0 20px rgb(190, 214, 9);
+        border-radius: 130%;
+    }
+
+    25% {
+        box-shadow: 0 0 25px rgb(190, 214, 9);
+    }
+
+    30% {
+        box-shadow: 0 0 30px rgb(190, 214, 9);
+    }
+
+    35% {
+        box-shadow: 0 0 35px rgb(190, 214, 9);
+    }
+
+    40% {
+        box-shadow: 0 0 40px rgb(190, 214, 9);
+    }
+
+    45% {
+        box-shadow: 0 0 45px rgb(190, 214, 9);
+    }
+
+    50% {
+        box-shadow: 0 0 50px rgb(190, 214, 9);
+    }
+
+    55% {
+        box-shadow: 0 0 55px rgb(190, 214, 9);
+    }
+
+    60% {
+        box-shadow: 0 0 60px rgb(190, 214, 9);
+        border-radius: 360%;
+    }
+
+    65% {
+        box-shadow: 0 0 55px rgb(190, 214, 9);
+        border-radius: 360%;
+    }
+
+    70% {
+        box-shadow: 0 0 50px rgb(190, 214, 9);
+        border-radius: 360%;
+    }
+
+    75% {
+        box-shadow: 0 0 45px rgb(190, 214, 9);
+        border-radius: 360%;
+    }
+
+    80% {
+        box-shadow: 0 0 40px rgb(190, 214, 9);
+        border-radius: 360%;
+    }
+
+    85% {
+        box-shadow: 0 0 35px rgb(190, 214, 9);
+        border-radius: 360%;
+        object-fit: cover;
+    }
+
+    90% {
+        box-shadow: 0 0 30px rgb(190, 214, 9);
+        border-radius: 360%;
+        object-fit: cover;
+    }
+
+    95% {
+        box-shadow: 0 0 25px rgb(190, 214, 9);
+        border-radius: 360%;
+        object-fit: cover;
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgb(190, 214, 9);
+        border-radius: 360%;
+        object-fit: cover;  
+    }
+}
+
 .header__foto-author {
     width: 350px;
     height: 350px;
-    object-fit: cover;
-    border-radius: 360%;
-    box-shadow: 0 0 20px yellow;
+    animation: shadow_two 2s 2s linear forwards;
 }
+
+/* Сделать анимацию: при первой звгрузки страницы сайт выглядит ужасно, 
+нет стилей, все криво, шрифты ужасные, через 2-3 секунды запускаются анимации 
+которые подключают стили и сайт становится красивым
